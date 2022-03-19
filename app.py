@@ -71,11 +71,8 @@ with st.form("Prediction_form"):
                       'Casualty_severity':Casualty_severity}
         df = pd.DataFrame(input_dict, index=[1])
         df_enc = label_enc(df)
-        print(df_enc.shape)
-        print(df)
         #
         prediction = predict(df_enc)[0]
-        print(prediction)
         map_acc_sev = { 0 :'Fatal injury', 1: 'Serious Injury', 2:'Slight Injury'}
         value = map_acc_sev[prediction]
         # output header
