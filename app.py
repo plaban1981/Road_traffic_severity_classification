@@ -13,8 +13,8 @@ from Utils.model import predict
 from Utils.label_encoding import label_enc
 from xgboost import XGBClassifier
 
-#image_path = "acc_sev.jpg"
-#image = Image.open(image_path)
+image_path = "acc_sev.jpg"
+image = Image.open(image_path)
 features = ['Time', 'Day_of_week', 'Age_band_of_driver', 'Service_year_of_vehicle',
        'Defect_of_vehicle', 'Area_accident_occured', 'Types_of_Junction',
        'Road_surface_conditions', 'Light_conditions', 'Weather_conditions',
@@ -26,7 +26,7 @@ features = ['Time', 'Day_of_week', 'Age_band_of_driver', 'Service_year_of_vehicl
 st.set_page_config(page_title="Accident Severity Prediction App",
                    page_icon="🚧", layout="centered")
 
-#st.image(image, caption='Road Safety Management')
+st.image(image, caption='Road Safety Management')
 
 # page header
 st.title(f"Accident Severity Prediction App")
