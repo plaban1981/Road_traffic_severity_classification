@@ -13,7 +13,7 @@ from Utils.model import predict
 from Utils.label_encoding import label_enc
 from xgboost import XGBClassifier
 
-image_path = r"C:\Users\nayak\Documents\TMLC_Course\acc_sev.jpg"
+image_path = "acc_sev.jpg"
 image = Image.open(image_path)
 features = ['Time', 'Day_of_week', 'Age_band_of_driver', 'Service_year_of_vehicle',
        'Defect_of_vehicle', 'Area_accident_occured', 'Types_of_Junction',
