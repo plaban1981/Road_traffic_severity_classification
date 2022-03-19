@@ -10,7 +10,7 @@ Prediction logic
 import joblib
 from xgboost import XGBClassifier
 
-model_path = r"Model\XGB_compress.pkl"
+model_path = r"Model/XGB_compress.pkl"
 model = joblib.load(model_path)
 
 def predict(attribues):
