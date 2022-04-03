@@ -8,3 +8,7 @@ https://medium.com/analytics-vidhya/deploying-nlp-model-on-heroku-using-flask-nl
 
 
 heroku app : https://rta-severity-prediction-app.herokuapp.com/
+
+
+
+streamlit cloud : https://share.streamlit.io/plaban1981/road_traffic_severity_classification/main/app.py
